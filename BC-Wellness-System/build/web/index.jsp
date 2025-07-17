@@ -7,16 +7,21 @@
     <title>BC Student Wellness Management System</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .header {
+            background-color: #007bff;
             color: white;
-            padding: 100px 0;
+            padding: 60px 0;
+            text-align: center;
         }
-        .feature-card {
-            transition: transform 0.3s;
+        .card {
+            margin-bottom: 20px;
         }
-        .feature-card:hover {
-            transform: translateY(-5px);
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #dee2e6;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -24,77 +29,62 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.jsp">
-                <strong>BC Wellness</strong>
-            </a>
+            <a class="navbar-brand" href="index.jsp">BC Wellness</a>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="login.jsp">Login</a>
-                <a class="nav-link" href="register.jsp">Register</a> //
+                <a class="nav-link" href="register.jsp">Register</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section text-center">
+    <!-- Header Section -->
+    <div class="header">
         <div class="container">
-            <h1 class="display-4 fw-bold mb-4">Welcome to BC Student Wellness System</h1>
-            <p class="lead mb-4">Your mental health and well-being are our priority. Access counseling services, book appointments, and manage your wellness journey.</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="login.jsp" class="btn btn-light btn-lg">Login</a>
-                <a href="register.jsp" class="btn btn-outline-light btn-lg">Register</a>            </div>
+            <h1>BC Student Wellness System</h1>
+            <p>Your mental health and well-being are our priority.</p>
+            <a href="login.jsp" class="btn btn-light me-2">Login</a>
+            <a href="register.jsp" class="btn btn-outline-light">Register</a>
         </div>
-    </section>
+    </div>
 
-    <!-- Features Section -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Our Services</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card feature-card h-100 shadow">
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <i class="fas fa-calendar-alt fa-3x text-primary"></i>
-                            </div>
-                            <h5 class="card-title">Appointment Booking</h5>
-                            <p class="card-text">Schedule appointments with qualified counselors at your convenience.</p>
-                        </div>
+    <!-- Services Section -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Appointment Booking</h5>
+                        <p class="card-text">Schedule appointments with qualified counselors.</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card feature-card h-100 shadow">
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <i class="fas fa-user-friends fa-3x text-success"></i>
-                            </div>
-                            <h5 class="card-title">Professional Counselors</h5>
-                            <p class="card-text">Connect with experienced mental health professionals who understand student needs.</p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Professional Counselors</h5>
+                        <p class="card-text">Connect with experienced mental health professionals.</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card feature-card h-100 shadow">
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <i class="fas fa-comments fa-3x text-info"></i>
-                            </div>
-                            <h5 class="card-title">Feedback System</h5>
-                            <p class="card-text">Share your experience and help us improve our services for all students.</p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Feedback System</h5>
+                        <p class="card-text">Share your experience and help us improve.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
+    <div class="footer">
+        <div class="container">
             <p>&copy; 2025 Belgium Campus - Student Wellness Management System</p>
         </div>
-    </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
 </body>
 </html>
